@@ -1,0 +1,43 @@
+# Faithful vector trace of the chosen Castron shield (coordinates in the source image's 915x1024 space).
+DEFS = '''<defs>
+  <linearGradient id="cm-steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4F6F9"/><stop offset=".55" stop-color="#AEB6C1"/><stop offset="1" stop-color="#6F7986"/></linearGradient>
+  <linearGradient id="cm-steel-v" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9EDF2"/><stop offset="1" stop-color="#7F8994"/></linearGradient>
+  <linearGradient id="cm-tower" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E4E8EE"/><stop offset=".62" stop-color="#C3C9D1"/><stop offset=".63" stop-color="#9AA3AE"/><stop offset="1" stop-color="#848E9A"/></linearGradient>
+  <linearGradient id="cm-rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FE3F2"/><stop offset=".5" stop-color="#2E9BE6"/><stop offset="1" stop-color="#2159C9"/></linearGradient>
+  <linearGradient id="cm-bar" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2E7FE0"/><stop offset=".5" stop-color="#46C3F2"/><stop offset="1" stop-color="#2166D1"/></linearGradient>
+  <linearGradient id="cm-lock" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4FDDF5"/><stop offset=".5" stop-color="#34B9EE"/><stop offset=".51" stop-color="#2A93DF"/><stop offset="1" stop-color="#2A86D8"/></linearGradient>
+  <clipPath id="cm-inside"><path d="M72 250 214 204 702 204 844 250 840 560C820 780 616 915 458 972 300 915 96 780 76 560Z"/></clipPath>
+</defs>'''
+
+BODY = '''
+  <path d="M66 244 210 196 706 196 850 244 846 560C826 790 616 930 458 988 300 930 90 790 70 560Z" fill="#0D1A29"/>
+  <g clip-path="url(#cm-inside)">
+    <path d="M146 350C92 472 100 612 210 724L250 694C168 606 164 482 206 366Z" fill="url(#cm-steel)"/>
+    <path d="M770 350C824 472 816 612 706 724L666 694C748 606 752 482 710 366Z" fill="url(#cm-steel)"/>
+    <path d="M250 470C230 528 234 588 268 630L290 612C262 578 258 530 274 480Z" fill="url(#cm-bar)"/>
+    <path d="M666 470C686 528 682 588 648 630L626 612C654 578 658 530 642 480Z" fill="url(#cm-bar)"/>
+    <path d="M60 242 848 836M856 242 68 836" stroke="#0D1A29" stroke-width="92"/>
+    <path d="M60 242 848 836" stroke="url(#cm-bar)" stroke-width="66"/>
+    <path d="M856 242 68 836" stroke="url(#cm-bar)" stroke-width="66"/>
+  </g>
+  <path d="M246 262 458 194 670 262 670 322 458 254 246 322Z" fill="url(#cm-steel-v)"/>
+  <path d="M338 378 458 330 578 378 578 410 458 362 338 410Z" fill="url(#cm-bar)"/>
+  <path d="M352 712 458 776 564 712 564 744 458 810 352 744Z" fill="url(#cm-bar)"/>
+  <path d="M266 790 458 900 650 790 650 848 458 956 266 848Z" fill="url(#cm-steel-v)"/>
+  <path d="M242 188V52H328V104H452V28H514V98H598V58H672V188Z" fill="url(#cm-tower)"/><path d="M328 52 350 62V104H328ZM514 28 536 40V98H514Z" fill="#8C96A2"/>
+  <path d="M211 196 66 244 70 560C90 790 300 930 458 988 616 930 826 790 846 560L850 244 705 196" fill="none" stroke="url(#cm-rim)" stroke-width="30" stroke-linejoin="round"/>
+  <rect x="372" y="412" width="172" height="252" rx="84" fill="#0A1522"/>
+  <path d="M392 446A80 80 0 0 1 524 446M404 652A64 30 0 0 0 512 652" fill="none" stroke="#1C3D63" stroke-width="5" stroke-linecap="round"/>
+  <path d="M424 506V478A34 34 0 0 1 492 478V506" fill="none" stroke="url(#cm-steel-v)" stroke-width="15"/>
+  <rect x="400" y="500" width="116" height="98" rx="13" fill="url(#cm-lock)"/>
+  <circle cx="458" cy="538" r="14" fill="#0A1522"/><path d="M451 544H465L469 578H447Z" fill="#0A1522"/>
+'''
+
+def standalone(size=None):
+    wh = f' width="{size[0]}" height="{size[1]}"' if size else ' width="915" height="1024"'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 915 1024"{wh} role="img" aria-labelledby="t"><title id="t">Castron</title>{DEFS}{BODY}</svg>'
+
+if __name__ == '__main__':
+    open('castron-mark.svg','w').write(standalone())
+    import cairosvg
+    cairosvg.svg2png(bytestring=standalone().encode(), write_to='trace.png', output_width=457, background_color='#0F1A24')

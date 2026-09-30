@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 915 1024" width="915" height="1024"><title>Castron</title><defs>
+  <linearGradient id="cm-steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4F6F9"/><stop offset=".55" stop-color="#AEB6C1"/><stop offset="1" stop-color="#6F7986"/></linearGradient>
+  <linearGradient id="cm-steel-v" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9EDF2"/><stop offset="1" stop-color="#7F8994"/></linearGradient>
+  <linearGradient id="cm-tower" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E4E8EE"/><stop offset=".62" stop-color="#C3C9D1"/><stop offset=".63" stop-color="#9AA3AE"/><stop offset="1" stop-color="#848E9A"/></linearGradient>
+  <linearGradient id="cm-rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FE3F2"/><stop offset=".5" stop-color="#2E9BE6"/><stop offset="1" stop-color="#2159C9"/></linearGradient>
+  <linearGradient id="cm-bar" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2E7FE0"/><stop offset=".5" stop-color="#46C3F2"/><stop offset="1" stop-color="#2166D1"/></linearGradient>
+  <linearGradient id="cm-lock" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4FDDF5"/><stop offset=".5" stop-color="#34B9EE"/><stop offset=".51" stop-color="#2A93DF"/><stop offset="1" stop-color="#2A86D8"/></linearGradient>
+  <clipPath id="cm-inside"><path d="M72 250 214 204 702 204 844 250 840 560C820 780 616 915 458 972 300 915 96 780 76 560Z"/></clipPath>
+</defs>
+<path d="M66 244 210 196 706 196 850 244 846 560C826 790 616 930 458 988 300 930 90 790 70 560Z" fill="#0D1A29"/>
+<g clip-path="url(#cm-inside)"><path d="M60 242 848 836M856 242 68 836" stroke="url(#cm-bar)" stroke-width="110"/></g>
+<path d="M242 188V52H328V104H452V28H514V98H598V58H672V188Z" fill="url(#cm-tower)"/>
+<path d="M211 196 66 244 70 560C90 790 300 930 458 988 616 930 826 790 846 560L850 244 705 196" fill="none" stroke="url(#cm-rim)" stroke-width="54" stroke-linejoin="round"/>
+<rect x="336" y="392" width="244" height="300" rx="110" fill="#0A1522"/>
+<path d="M408 520V476A50 50 0 0 1 508 476V520" fill="none" stroke="#E9EDF2" stroke-width="26"/>
+<rect x="376" y="510" width="164" height="136" rx="18" fill="url(#cm-lock)"/></svg>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="static">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Install Ubuntu, step by step | CastronTech</title>
+<meta name="description" content="From download to a secure, updated desktop or server: verify the image, make a USB installer, install, and harden the first boot.">
+<meta property="og:title" content="Install Ubuntu, step by step | CastronTech"><meta property="og:description" content="From download to a secure, updated desktop or server: verify the image, make a USB installer, install, and harden the first boot."><meta property="og:type" content="website"><meta name="theme-color" content="#0B1420">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MTUgMTAyNCIgd2lkdGg9IjkxNSIgaGVpZ2h0PSIxMDI0Ij48dGl0bGU+Q2FzdHJvbjwvdGl0bGU+PGRlZnM+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJjbS1zdGVlbCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0Y0RjZGOSIvPjxzdG9wIG9mZnNldD0iLjU1IiBzdG9wLWNvbG9yPSIjQUVCNkMxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNkY3OTg2Ii8+PC9saW5lYXJHcmFkaWVudD4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImNtLXN0ZWVsLXYiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNFOUVERjIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM3Rjg5OTQiLz48L2xpbmVhckdyYWRpZW50PgogIDxsaW5lYXJHcmFkaWVudCBpZD0iY20tdG93ZXIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIwIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNFNEU4RUUiLz48c3RvcCBvZmZzZXQ9Ii42MiIgc3RvcC1jb2xvcj0iI0MzQzlEMSIvPjxzdG9wIG9mZnNldD0iLjYzIiBzdG9wLWNvbG9yPSIjOUFBM0FFIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjODQ4RTlBIi8+PC9saW5lYXJHcmFkaWVudD4KICA8bGluZWFyR3JhZGllbnQgaWQ9ImNtLXJpbSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzRGRTNGMiIvPjxzdG9wIG9mZnNldD0iLjUiIHN0b3AtY29sb3I9IiMyRTlCRTYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyMTU5QzkiLz48L2xpbmVhckdyYWRpZW50PgogIDxsaW5lYXJHcmFkaWVudCBpZD0iY20tYmFyIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMkU3RkUwIi8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iIzQ2QzNGMiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzIxNjZEMSIvPjwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJjbS1sb2NrIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMCI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNEZEREY1Ii8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iIzM0QjlFRSIvPjxzdG9wIG9mZnNldD0iLjUxIiBzdG9wLWNvbG9yPSIjMkE5M0RGIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMkE4NkQ4Ii8+PC9saW5lYXJHcmFkaWVudD4KICA8Y2xpcFBhdGggaWQ9ImNtLWluc2lkZSI+PHBhdGggZD0iTTcyIDI1MCAyMTQgMjA0IDcwMiAyMDQgODQ0IDI1MCA4NDAgNTYwQzgyMCA3ODAgNjE2IDkxNSA0NTggOTcyIDMwMCA5MTUgOTYgNzgwIDc2IDU2MFoiLz48L2NsaXBQYXRoPgo8L2RlZnM+CjxwYXRoIGQ9Ik02NiAyNDQgMjEwIDE5NiA3MDYgMTk2IDg1MCAyNDQgODQ2IDU2MEM4MjYgNzkwIDYxNiA5MzAgNDU4IDk4OCAzMDAgOTMwIDkwIDc5MCA3MCA1NjBaIiBmaWxsPSIjMEQxQTI5Ii8+CjxnIGNsaXAtcGF0aD0idXJsKCNjbS1pbnNpZGUpIj48cGF0aCBkPSJNNjAgMjQyIDg0OCA4MzZNODU2IDI0MiA2OCA4MzYiIHN0cm9rZT0idXJsKCNjbS1iYXIpIiBzdHJva2Utd2lkdGg9IjExMCIvPjwvZz4KPHBhdGggZD0iTTI0MiAxODhWNTJIMzI4VjEwNEg0NTJWMjhINTE0Vjk4SDU5OFY1OEg2NzJWMTg4WiIgZmlsbD0idXJsKCNjbS10b3dlcikiLz4KPHBhdGggZD0iTTIxMSAxOTYgNjYgMjQ0IDcwIDU2MEM5MCA3OTAgMzAwIDkzMCA0NTggOTg4IDYxNiA5MzAgODI2IDc5MCA4NDYgNTYwTDg1MCAyNDQgNzA1IDE5NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2NtLXJpbSkiIHN0cm9rZS13aWR0aD0iNTQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHJlY3QgeD0iMzM2IiB5PSIzOTIiIHdpZHRoPSIyNDQiIGhlaWdodD0iMzAwIiByeD0iMTEwIiBmaWxsPSIjMEExNTIyIi8+CjxwYXRoIGQ9Ik00MDggNTIwVjQ3NkE1MCA1MCAwIDAgMSA1MDggNDc2VjUyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRTlFREYyIiBzdHJva2Utd2lkdGg9IjI2Ii8+CjxyZWN0IHg9IjM3NiIgeT0iNTEwIiB3aWR0aD0iMTY0IiBoZWlnaHQ9IjEzNiIgcng9IjE4IiBmaWxsPSJ1cmwoI2NtLWxvY2spIi8+PC9zdmc+">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@1,400;1,500&display=swap">
+<meta name="color-scheme" content="dark light"><script>(function(){var t='dark';try{if(localStorage.getItem('castron-theme')==='light'){t='light';}}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-nav="learn">
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs> <linearGradient id="cm-steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4F6F9"/><stop offset=".55" stop-color="#AEB6C1"/><stop offset="1" stop-color="#6F7986"/></linearGradient> <linearGradient id="cm-steel-v" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9EDF2"/><stop offset="1" stop-color="#7F8994"/></linearGradient> <linearGradient id="cm-tower" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E4E8EE"/><stop offset=".62" stop-color="#C3C9D1"/><stop offset=".63" stop-color="#9AA3AE"/><stop offset="1" stop-color="#848E9A"/></linearGradient> <linearGradient id="cm-rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FE3F2"/><stop offset=".5" stop-color="#2E9BE6"/><stop offset="1" stop-color="#2159C9"/></linearGradient> <linearGradient id="cm-bar" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2E7FE0"/><stop offset=".5" stop-color="#46C3F2"/><stop offset="1" stop-color="#2166D1"/></linearGradient> <linearGradient id="cm-lock" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4FDDF5"/><stop offset=".5" stop-color="#34B9EE"/><stop offset=".51" stop-color="#2A93DF"/><stop offset="1" stop-color="#2A86D8"/></linearGradient> <clipPath id="cm-inside"><path d="M72 250 214 204 702 204 844 250 840 560C820 780 616 915 458 972 300 915 96 780 76 560Z"/></clipPath> </defs><symbol id="castron-shield" viewBox="0 0 915 1024"><path d="M66 244 210 196 706 196 850 244 846 560C826 790 616 930 458 988 300 930 90 790 70 560Z" fill="#0D1A29"/> <g clip-path="url(#cm-inside)"> <path d="M146 350C92 472 100 612 210 724L250 694C168 606 164 482 206 366Z" fill="url(#cm-steel)"/> <path d="M770 350C824 472 816 612 706 724L666 694C748 606 752 482 710 366Z" fill="url(#cm-steel)"/> <path d="M250 470C230 528 234 588 268 630L290 612C262 578 258 530 274 480Z" fill="url(#cm-bar)"/> <path d="M666 470C686 528 682 588 648 630L626 612C654 578 658 530 642 480Z" fill="url(#cm-bar)"/> <path d="M60 242 848 836M856 242 68 836" stroke="#0D1A29" stroke-width="92"/> <path d="M60 242 848 836" stroke="url(#cm-bar)" stroke-width="66"/> <path d="M856 242 68 836" stroke="url(#cm-bar)" stroke-width="66"/> </g> <path d="M246 262 458 194 670 262 670 322 458 254 246 322Z" fill="url(#cm-steel-v)"/> <path d="M338 378 458 330 578 378 578 410 458 362 338 410Z" fill="url(#cm-bar)"/> <path d="M352 712 458 776 564 712 564 744 458 810 352 744Z" fill="url(#cm-bar)"/> <path d="M266 790 458 900 650 790 650 848 458 956 266 848Z" fill="url(#cm-steel-v)"/> <path d="M242 188V52H328V104H452V28H514V98H598V58H672V188Z" fill="url(#cm-tower)"/><path d="M328 52 350 62V104H328ZM514 28 536 40V98H514Z" fill="#8C96A2"/> <path d="M211 196 66 244 70 560C90 790 300 930 458 988 616 930 826 790 846 560L850 244 705 196" fill="none" stroke="url(#cm-rim)" stroke-width="30" stroke-linejoin="round"/> <rect x="372" y="412" width="172" height="252" rx="84" fill="#0A1522"/> <path d="M392 446A80 80 0 0 1 524 446M404 652A64 30 0 0 0 512 652" fill="none" stroke="#1C3D63" stroke-width="5" stroke-linecap="round"/> <path d="M424 506V478A34 34 0 0 1 492 478V506" fill="none" stroke="url(#cm-steel-v)" stroke-width="15"/> <rect x="400" y="500" width="116" height="98" rx="13" fill="url(#cm-lock)"/> <circle cx="458" cy="538" r="14" fill="#0A1522"/><path d="M451 544H465L469 578H447Z" fill="#0A1522"/></symbol></svg><a class="skip" href="#content">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <div class="utility-row" aria-label="Quick links">
+      <a href="blog.html">Blog</a><a href="contact.html" data-nav="contact">Contact</a>
+      <button type="button" class="link-btn" data-open="login">Log in</button>
+    </div>
+    <div class="header-row">
+      <a class="brand" href="index.html" aria-label="CastronTech home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 359 110" aria-hidden="true" focusable="false"><use href="#castron-shield" x="0" y="0" width="98" height="110"/><path d="M134.96665649414064 75.69166564941406Q130.9166748046875 75.69166564941406 127.9708480834961 74.37083587646484Q125.02502136230468 73.05000610351563 123.1250213623047 70.68334350585937Q121.22502136230469 68.31668090820312 120.32918548583984 65.22917938232422Q119.433349609375 62.14167785644531 119.433349609375 58.616668701171875Q119.433349609375 54.97499084472656 120.36251983642578 51.816656494140624Q121.29169006347657 48.658322143554685 123.17085723876954 46.30415802001953Q125.0500244140625 43.94999389648437 127.9458511352539 42.629164123535155Q130.8416778564453 41.30833435058594 134.80832214355468 41.30833435058594Q138.23330078125 41.30833435058594 140.7499572753906 42.29166259765625Q143.26661376953126 43.27499084472656 144.8374465942383 44.99581756591797Q146.4082794189453 46.716644287109375 147.0624526977539 48.974972534179685Q147.7166259765625 51.233300781249994 147.49163513183595 53.749969482421875L140.84173278808595 54.59162902832031Q140.88339233398438 52.324948120117185 140.16671447753907 50.699938964843746Q139.45003662109374 49.07492980957031 138.0583557128906 48.19159240722656Q136.6666748046875 47.30825500488281 134.59999389648436 47.30825500488281Q132.84164733886718 47.30825500488281 131.43746490478514 47.995759582519526Q130.0332824707031 48.68326416015625 129.04160156249998 50.06244049072265Q128.04992065429687 51.44161682128906 127.52491149902343 53.49996643066406Q126.99990234375 55.55831604003906 126.99990234375 58.30000610351563Q126.99990234375 61.825033569335936 127.90824890136719 64.37921600341797Q128.81659545898438 66.9333984375 130.62911529541014 68.31673889160157Q132.44163513183594 69.70007934570313 135.1166564941406 69.70007934570313Q137.5500061035156 69.70007934570313 139.0250244140625 68.6000732421875Q140.5000427246094 67.50006713867188 141.15838928222655 65.52505187988282Q141.81673583984374 63.55003662109375 141.64173889160156 61.000006103515624L148.46663818359374 61.64167175292969Q148.68330078125 64.44167785644531 148.02496337890625 66.9666778564453Q147.3666259765625 69.4916778564453 145.73745880126953 71.4666748046875Q144.10829162597656 73.4416717529297 141.44163208007814 74.56666870117188Q138.77497253417968 75.69166564941406 134.96665649414064 75.69166564941406Z M152.2166748046875 75.0 163.4250274658203 42.0H172.83322753906248L183.99991455078123 75.0H176.2000305175781L168.22496032714844 47.89992065429688H167.93329467773435L159.94156188964843 75.0ZM158.2499816894531 68.79162292480468V63.60835266113281H178.84159240722656V68.79162292480468Z M201.5916534423828 75.69166564941406Q198.20833435058594 75.69166564941406 195.62500610351563 74.91250152587891Q193.04167785644532 74.13333740234376 191.30001220703127 72.65834045410156Q189.5583465576172 71.18334350585937 188.72917938232422 69.06667785644531Q187.90001220703124 66.95001220703125 188.0166809082031 64.30834045410157L194.74158630371093 62.86669921875Q194.7665771484375 65.35005493164063 195.71658630371093 66.85423126220704Q196.66659545898438 68.35840759277343 198.30411224365236 69.05007629394531Q199.9416290283203 69.74174499511719 201.91664428710936 69.74174499511719Q203.65834045410156 69.74174499511719 204.96669311523436 69.3000701904297Q206.2750457763672 68.85839538574218 207.02505493164062 68.05421295166016Q207.77506408691406 67.25003051757812 207.77506408691406 66.15834045410156Q207.77506408691406 64.766650390625 206.7875534057617 63.9124740600586Q205.80004272460937 63.05829772949219 204.12086334228513 62.48746185302734Q202.44168395996093 61.9166259765625 200.3833435058594 61.383294677734376Q198.23334350585938 60.80829772949219 196.11251068115234 60.10413360595703Q193.9916778564453 59.399969482421874 192.24584503173827 58.320805358886716Q190.50001220703126 57.241641235351565 189.4333465576172 55.51664428710937Q188.36668090820314 53.791647338867186 188.36668090820314 51.22498474121093Q188.36668090820314 48.116662597656244 189.94584197998046 45.89583282470703Q191.5250030517578 43.67500305175781 194.34999694824216 42.491668701171875Q197.17499084472655 41.30833435058594 200.8666564941406 41.30833435058594Q204.6916473388672 41.30833435058594 207.66247100830077 42.595829772949216Q210.63329467773437 43.883325195312494 212.24579010009765 46.3791519165039Q213.85828552246093 48.87497863769531 213.5416229248047 52.52497253417968L206.90838317871095 53.6166259765625Q206.9917205810547 52.04161682128906 206.600048828125 50.83744354248047Q206.2083770751953 49.633270263671875 205.40003356933593 48.799932861328124Q204.59169006347656 47.96659545898437 203.3916778564453 47.529093933105464Q202.19166564941406 47.09159240722656 200.6166564941406 47.09159240722656Q198.9083038330078 47.09159240722656 197.7416198730469 47.55826721191406Q196.57493591308594 48.02494201660156 195.9624252319336 48.84579010009765Q195.34991455078125 49.66663818359375 195.34991455078125 50.741659545898436Q195.34991455078125 52.00835266113281 196.25409393310548 52.80419769287109Q197.15827331542968 53.600042724609374 198.77912139892578 54.14171142578125Q200.39996948242188 54.683380126953125 202.4999755859375 55.22504577636718Q204.65830993652344 55.80004272460937 206.81664123535157 56.50420684814453Q208.9749725341797 57.208370971679685 210.80413665771485 58.350033569335935Q212.63330078125 59.491696166992185 213.73746490478516 61.3000244140625Q214.8416290283203 63.10835266113281 214.8416290283203 65.88334350585937Q214.8416290283203 69.11666870117188 213.15830078125 71.3Q211.4749725341797 73.48333129882812 208.49581146240234 74.58749847412109Q205.516650390625 75.69166564941406 201.5916534423828 75.69166564941406Z M227.4833740234375 75.0V42.0H234.70826721191406V75.0ZM219.0 48.19158020019531V42.0H243.19164123535157V48.19158020019531Z M248.55001831054688 75.0V42.0H261.72495422363284Q263.9416229248047 42.0 265.9124557495117 42.37916717529296Q267.88328857421874 42.75833435058593 269.49161987304683 43.520835876464844Q271.099951171875 44.28333740234375 272.2749481201172 45.441671752929686Q273.4499450683594 46.600006103515625 274.0832763671875 48.17500610351563Q274.71660766601565 49.750006103515624 274.71660766601565 51.74167175292969Q274.71660766601565 53.266668701171874 274.2124435424805 54.65833740234375Q273.7082794189453 56.05000610351563 272.60411529541017 57.170841979980466Q271.499951171875 58.29167785644531 269.7124496459961 59.029179382324216Q267.92494812011716 59.76668090820313 265.4082733154297 60.03334350585938V60.433343505859376Q268.5082611083984 60.591677856445315 270.23742523193357 61.66250762939453Q271.9665893554687 62.73333740234375 272.86659240722656 64.42500610351563Q273.7665954589844 66.1166748046875 274.2666015625 68.20835876464844L275.99159851074216 75.0H268.03338623046875L266.78338623046875 68.70003051757813Q266.450048828125 66.94169006347656 265.7792098999023 65.7666748046875Q265.1083709716797 64.59165954589844 263.8541915893554 63.98748016357422Q262.6000122070312 63.38330078125 260.4916534423828 63.38330078125H255.77491149902343V75.0ZM255.77491149902343 57.74170837402343H260.8832946777344Q263.9916717529297 57.74170837402343 265.62502746582027 56.57502746582031Q267.2583831787109 55.408346557617186 267.2583831787109 52.98331298828125Q267.2583831787109 50.399951171875 265.7291946411133 49.129103088378905Q264.20000610351565 47.85825500488281 261.0916290283203 47.85825500488281H255.77491149902343Z" style="fill:var(--ink)"/><g transform="translate(295.8 57.0)" fill="none" stroke-linecap="round"><circle r="15.5" style="stroke:var(--ink)" stroke-width="6.5"/><circle r="5.5" style="fill:var(--lock)" stroke="none"/><path d="M0-23v-7M0 23v7" style="stroke:var(--lock)" stroke-width="4"/></g><path d="M316.9000183105469 75.0V42.0H326.65821838378906L339.5500244140625 65.65849304199219H339.6500244140625V42.0H346.7999206542969V75.0H337.56670532226565L324.14158020019534 50.724856567382815H324.0415802001953V75.0Z" style="fill:var(--ink)"/></svg><span class="sub-brand">Tech</span></a>
+      <nav class="main-nav mega-nav" aria-label="Main">
+        <div class="mega-item">
+          <button type="button" class="mega-btn" aria-expanded="false" aria-controls="mega-products" data-nav="products">Products <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="mega-panel" id="mega-products" hidden>
+            <div class="mega-inner"><div class="mega-col"><p class="mega-head">Tools</p><a href="adhygiene.html">ADHygiene</a><a href="tools.html#hardening">CastronSTIG <small>In development</small></a><a href="tools.html#patching">CastronPatch <small>Planned</small></a><a href="tools.html">All tools</a></div><div class="mega-col"><p class="mega-head">By problem</p><a href="tools.html#identity">Identity and Active Directory</a><a href="tools.html#hardening">Hardening and compliance</a><a href="tools.html#patching">Patching and vulnerabilities</a><a href="tools.html#automation">Admin automation</a></div><div class="mega-feature"><p class="mega-head">Featured</p><strong>ADHygiene 1.0</strong><p>Find stale and risky Active Directory accounts. Free read-only scan.</p><a class="btn btn-amber" href="downloads.html">Download free</a></div></div>
+          </div>
+        </div>
+        <div class="mega-item">
+          <button type="button" class="mega-btn" aria-expanded="false" aria-controls="mega-learn" data-nav="learn">Learn <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="mega-panel" id="mega-learn" hidden>
+            <div class="mega-inner"><div class="mega-col"><p class="mega-head">Education</p><a href="learn.html#windows">Windows</a><a href="learn.html#linux">Linux</a><a href="learn.html#macos">macOS</a><a href="learn.html#networking">Networking</a><a href="learn.html#security">Security</a><a href="learn.html#pc">PC configuration</a></div><div class="mega-col"><p class="mega-head">Read and watch</p><a href="certifications.html">Certifications</a><a href="learn-vulnerabilities-101.html">Vulnerabilities explained</a><a href="blog.html">Blog</a><a href="index.html#videos">Videos</a><a href="contribute.html">Write for us</a><a href="learn.html">All guides</a></div><div class="mega-feature"><p class="mega-head">New guide</p><strong>What is listening on your ports?</strong><p>Find every open port and the program behind it, on Windows, Linux and macOS.</p><a class="btn btn-amber" href="guide-listening-ports.html">Read the guide</a></div></div>
+          </div>
+        </div>
+        <div class="mega-item">
+          <button type="button" class="mega-btn" aria-expanded="false" aria-controls="mega-support" data-nav="support">Support <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="mega-panel" id="mega-support" hidden>
+            <div class="mega-inner"><div class="mega-col"><p class="mega-head">Help</p><a href="docs.html">Documentation</a><a href="downloads.html">Downloads</a><a href="changelog.html">Changelog</a><a href="contact.html">Contact support</a></div><div class="mega-col"><p class="mega-head">Trust</p><a href="contact.html">Report a security issue</a><a href="privacy.html">Privacy policy</a><a href="refunds.html">Refund policy</a><a href="terms.html">Terms and EULA</a></div><div class="mega-feature"><p class="mega-head">Get help</p><strong>Talk to the person who wrote it</strong><p>Every support email is answered by the developer, within 2 business days.</p><a class="btn btn-amber" href="contact.html">Contact support</a></div></div>
+          </div>
+        </div>
+        <div class="mega-item">
+          <button type="button" class="mega-btn" aria-expanded="false" aria-controls="mega-company" data-nav="company">Company <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="mega-panel" id="mega-company" hidden>
+            <div class="mega-inner"><div class="mega-col"><p class="mega-head">CastronTech</p><a href="about.html">About</a><a href="contact.html">Contact</a><a href="contact.html">Partner with us</a><a href="blog.html">Blog</a></div><div class="mega-col"><p class="mega-head">Legal</p><a href="terms.html">Terms and EULA</a><a href="privacy.html">Privacy policy</a><a href="refunds.html">Refund policy</a></div><div class="mega-feature"><p class="mega-head">Our mission</p><strong>Careful tools, built like a fortress</strong><p>Read-only by default, preview first, always reversible.</p><a class="btn btn-amber" href="about.html">Read our story</a></div></div>
+          </div>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="theme-btn" data-theme-toggle aria-label="Switch to light mode" title="Switch light or dark mode"><svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+        <a class="btn btn-primary" href="downloads.html">Downloads</a>
+      </div>
+      <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Main" hidden>
+      <a href="index.html" data-nav="home">Home</a>
+      <details class="mob-group"><summary>Products</summary><p class="group-label">Tools</p><a class="sub" href="adhygiene.html">ADHygiene</a><a class="sub" href="tools.html#hardening">CastronSTIG <small>In development</small></a><a class="sub" href="tools.html#patching">CastronPatch <small>Planned</small></a><a class="sub" href="tools.html">All tools</a><p class="group-label">By problem</p><a class="sub" href="tools.html#identity">Identity and Active Directory</a><a class="sub" href="tools.html#hardening">Hardening and compliance</a><a class="sub" href="tools.html#patching">Patching and vulnerabilities</a><a class="sub" href="tools.html#automation">Admin automation</a></details>
+      <details class="mob-group"><summary>Learn</summary><p class="group-label">Education</p><a class="sub" href="learn.html#windows">Windows</a><a class="sub" href="learn.html#linux">Linux</a><a class="sub" href="learn.html#macos">macOS</a><a class="sub" href="learn.html#networking">Networking</a><a class="sub" href="learn.html#security">Security</a><a class="sub" href="learn.html#pc">PC configuration</a><p class="group-label">Read and watch</p><a class="sub" href="certifications.html">Certifications</a><a class="sub" href="learn-vulnerabilities-101.html">Vulnerabilities explained</a><a class="sub" href="contribute.html">Write for us</a><a class="sub" href="blog.html">Blog</a><a class="sub" href="index.html#videos">Videos</a><a class="sub" href="#newsletter">Field notes newsletter</a><a class="sub" href="learn.html">All guides</a></details>
+      <details class="mob-group"><summary>Support</summary><p class="group-label">Help</p><a class="sub" href="docs.html">Documentation</a><a class="sub" href="downloads.html">Downloads</a><a class="sub" href="changelog.html">Changelog</a><a class="sub" href="contact.html">Contact support</a><p class="group-label">Trust</p><a class="sub" href="contact.html">Report a security issue</a><a class="sub" href="privacy.html">Privacy policy</a><a class="sub" href="refunds.html">Refund policy</a><a class="sub" href="terms.html">Terms and EULA</a></details>
+      <details class="mob-group"><summary>Company</summary><p class="group-label">CastronTech</p><a class="sub" href="about.html">About</a><a class="sub" href="contact.html">Contact</a><a class="sub" href="contact.html">Partner with us</a><a class="sub" href="blog.html">Blog</a><p class="group-label">Legal</p><a class="sub" href="terms.html">Terms and EULA</a><a class="sub" href="privacy.html">Privacy policy</a><a class="sub" href="refunds.html">Refund policy</a></details>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <div class="row">
+        <button type="button" class="theme-btn" data-theme-toggle aria-label="Switch to light mode" title="Switch light or dark mode"><svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+        <button type="button" class="btn btn-ghost" data-open="login">Log in</button>
+        <a class="btn btn-primary" href="downloads.html">Downloads</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main id="content">
+<div data-page="install-ubuntu">
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="learn.html">Learn</a> / <a href="learn.html#linux">Linux</a> / <span aria-current="page">Install Ubuntu, step by step</span></nav>
+  <article class="article">
+    <header class="about-hero" style="padding-top:26px">
+      <p class="kicker">Beginner · 6 min read</p>
+      <h1>Install Ubuntu, step by step</h1>
+      <p class="lead">From download to a secure, updated desktop or server: verify the image, make a USB installer, install, and harden the first boot.</p>
+      <div class="platforms"><span>Linux</span><span>PC configuration</span></div>
+      <div class="share-bar" data-file="learn-install-ubuntu.html" data-title="Install Ubuntu, step by step"><span class="share-label">Share</span><a data-share="x" target="_blank" rel="noopener">X</a><a data-share="linkedin" target="_blank" rel="noopener">LinkedIn</a><a data-share="reddit" target="_blank" rel="noopener">Reddit</a><a data-share="facebook" target="_blank" rel="noopener">Facebook</a><a data-share="email">Email</a><button type="button" data-share="copy"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><span>Copy link</span></button></div>
+    </header>
+    <div class="article-body legal">
+<p>Ubuntu is the most widely used Linux desktop, a common choice for servers, and a good way to give an older PC a second life. This guide takes you from download to a secure, updated system, for both the desktop and server editions. It assumes nothing beyond being comfortable restarting a computer and changing a boot option.</p>
+
+<h2>Which version to choose</h2>
+<p>Ubuntu publishes a release every six months, and every second April release is a <strong>long-term support (LTS)</strong> version with five years of standard security updates. For anything you rely on, choose the latest LTS. Interim releases get nine months of support, which suits people who want the newest features and do not mind upgrading often.</p>
+<div class="table-scroll"><table class="data-table">
+<thead><tr><th>Edition</th><th>Use it for</th><th>Minimum hardware (practical)</th></tr></thead>
+<tbody>
+<tr><td>Desktop</td><td>Laptops and workstations, with a graphical interface</td><td>4 GB memory (8 GB recommended), 25 GB disk, 64-bit processor</td></tr>
+<tr><td>Server</td><td>Servers and virtual machines, managed by command line</td><td>1.5 GB memory, 5 GB disk; more for real workloads</td></tr>
+</tbody></table></div>
+
+<h2>1. Back up first</h2>
+<p>Installing can erase the disk. Copy everything you care about to another drive or cloud storage before you start, even if you plan to keep Windows alongside Ubuntu. If the PC uses BitLocker and you want to dual boot, save the BitLocker recovery key first: changing boot settings can trigger a recovery prompt.</p>
+
+<h2>2. Download and verify the image</h2>
+<p>Download the ISO from <a href="https://ubuntu.com/download" target="_blank" rel="noopener">ubuntu.com/download</a>, and the <code>SHA256SUMS</code> file from the same release folder. Verifying proves the file was not corrupted or tampered with:</p>
+<pre class="code"># Linux
+sha256sum ubuntu-*.iso
+
+# macOS
+shasum -a 256 ubuntu-*.iso
+
+# Windows PowerShell
+Get-FileHash .\ubuntu-*.iso -Algorithm SHA256</pre>
+<p>Compare the output with the line for your file in <code>SHA256SUMS</code>. On Linux you can let the tool compare for you:</p>
+<pre class="code">sha256sum -c SHA256SUMS --ignore-missing</pre>
+<p>A result of <code>OK</code> means the image is exactly what Canonical published.</p>
+
+<h2>3. Make a bootable USB drive</h2>
+<p>Use a USB stick of 8 GB or more; it will be erased.</p>
+<ul>
+<li><strong>Windows:</strong> Rufus or balenaEtcher. In Rufus, select the ISO, keep the partition scheme as GPT for modern UEFI computers, and write in the recommended ISO mode.</li>
+<li><strong>macOS:</strong> balenaEtcher.</li>
+<li><strong>Ubuntu:</strong> the built-in Startup Disk Creator.</li>
+</ul>
+<p>On Linux you can also write the image directly. Be very careful to pick the right device; <code>dd</code> overwrites whatever you point it at without asking:</p>
+<pre class="code">lsblk                                    # find the USB stick, for example /dev/sdb
+sudo dd if=ubuntu.iso of=/dev/sdb bs=4M status=progress conv=fsync</pre>
+
+<h2>4. Prepare the computer</h2>
+<ul>
+<li><strong>Boot order:</strong> open the boot menu at start-up, usually with F12, F10, F2 or Esc depending on the manufacturer.</li>
+<li><strong>Secure Boot:</strong> leave it on. Ubuntu supports it, and it protects the start-up process.</li>
+<li><strong>Storage mode:</strong> some laptops ship with Intel RST or "RAID" mode; if the installer cannot see the disk, switch to AHCI in the firmware settings (after backing up, as Windows may need adjusting first).</li>
+</ul>
+
+<h2>5. Try, then install</h2>
+<p>Choose <em>Try or Install Ubuntu</em>. Trying first lets you check that Wi-Fi, sound, the trackpad and the display work before you commit. Then start the installer:</p>
+<ul>
+<li><strong>Updates and drivers:</strong> tick the option to install third-party software for graphics and Wi-Fi hardware.</li>
+<li><strong>Disk:</strong> <em>Erase disk and install Ubuntu</em> replaces everything; <em>Install alongside</em> keeps Windows for dual booting.</li>
+<li><strong>Encryption:</strong> choose the encryption option under advanced features. If the laptop is lost, the data stays unreadable. Store the passphrase or recovery key somewhere safe, not on the same laptop.</li>
+<li><strong>Your account:</strong> use a strong password. This first account can use <code>sudo</code>, the Linux equivalent of administrator.</li>
+</ul>
+
+<h2>6. First boot: update and protect</h2>
+<p>Open a terminal (Ctrl+Alt+T) and run this first-boot script. Save it as <code>first-boot.sh</code>, make it executable with <code>chmod +x first-boot.sh</code>, and run it:</p>
+<pre class="code">#!/usr/bin/env bash
+# first-boot.sh - bring a fresh Ubuntu install up to date and switch on the basics
+set -euo pipefail
+
+echo "Installing all updates..."
+sudo apt update
+sudo apt full-upgrade -y
+sudo apt autoremove -y
+
+echo "Turning on the firewall: block incoming, allow outgoing..."
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw --force enable
+sudo ufw status verbose
+
+echo "Confirming automatic security updates are active..."
+systemctl is-enabled unattended-upgrades
+systemctl is-active unattended-upgrades
+
+echo "Useful tools..."
+sudo apt install -y git curl htop
+
+echo "Done. Reboot if a new kernel was installed: sudo reboot"</pre>
+<p>If the computer has an NVIDIA graphics card, let Ubuntu pick the recommended driver:</p>
+<pre class="code">ubuntu-drivers devices
+sudo ubuntu-drivers install</pre>
+
+<h2>7. Server edition: secure remote access</h2>
+<p>A server is usually managed over SSH. Install it, then use keys instead of passwords, which are far harder to guess or steal.</p>
+<pre class="code"># On the server
+sudo apt install -y openssh-server
+sudo ufw allow OpenSSH
+
+# On your own computer: create a key and copy it to the server
+ssh-keygen -t ed25519 -C "you@example.com"
+ssh-copy-id youruser@server-address</pre>
+<p>Once key login works, switch off password logins with a drop-in file, which survives package updates better than editing the main configuration:</p>
+<pre class="code">echo "PasswordAuthentication no" | sudo tee /etc/ssh/sshd_config.d/50-no-passwords.conf
+sudo sshd -t && sudo systemctl restart ssh</pre>
+<p><code>sshd -t</code> checks the configuration first; if it reports an error, fix it before restarting, or you can lock yourself out. Keep your current session open until you have confirmed a new login works.</p>
+
+<h2>8. Ubuntu Pro</h2>
+<p>Ubuntu Pro is free for personal use on a small number of machines. It extends security maintenance to many more packages and adds Livepatch, which applies kernel security fixes without a reboot. Attach it with the token from your Ubuntu One account:</p>
+<pre class="code">sudo pro attach YOUR_TOKEN
+pro status</pre>
+
+<h2>9. Set up backups</h2>
+<p>Open the built-in <strong>Backups</strong> app (Déjà Dup) and point it at an external drive or cloud folder. Then restore one file to prove it works. Our guide to the 3-2-1 backup rule explains how to build a plan that survives ransomware and theft.</p>
+
+<h2>Troubleshooting</h2>
+<ul>
+<li><strong>The USB stick does not appear in the boot menu:</strong> rewrite it with Rufus in GPT mode, or try another USB port, preferably directly on the computer.</li>
+<li><strong>No Wi-Fi after install:</strong> connect with a cable, run the updates, then check <em>Software &amp; Updates &gt; Additional Drivers</em>.</li>
+<li><strong>Black screen after boot:</strong> at the boot menu, press E, add <code>nomodeset</code> to the line starting with <code>linux</code>, press F10, then install the recommended graphics driver.</li>
+<li><strong>Windows missing from the boot menu after dual boot:</strong> run <code>sudo update-grub</code>.</li>
+</ul>
+
+      <div class="article-foot">
+        <p>Found this useful? Share it with someone who would too, or get a new guide every other week.</p>
+        <a class="btn btn-primary" href="#newsletter">Subscribe to field notes</a>
+      </div>
+      <div class="share-bar" data-file="learn-install-ubuntu.html" data-title="Install Ubuntu, step by step"><span class="share-label">Share</span><a data-share="x" target="_blank" rel="noopener">X</a><a data-share="linkedin" target="_blank" rel="noopener">LinkedIn</a><a data-share="reddit" target="_blank" rel="noopener">Reddit</a><a data-share="facebook" target="_blank" rel="noopener">Facebook</a><a data-share="email">Email</a><button type="button" data-share="copy"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><span>Copy link</span></button></div>
+    </div>
+  </article>
+  <section class="section-sm"><h2 class="sub-h">Keep reading</h2><div class="grid-3"><a class="card article-card" data-topics="security pc windows macos linux" href="learn-security-habits.html"><span class="art-meta">Security · Beginner · 5 min</span><h3>10 security habits that stop most attacks</h3><p>No jargon and no cost: the habits that protect you and your family from the attacks that actually happen, with exactly where to click to set each one up.</p><span class="aud">For everyone</span><span class="more">Read</span></a><a class="card article-card" data-topics="pc security windows macos linux" href="learn-backups-321.html"><span class="art-meta">PC configuration · Beginner · 5 min</span><h3>The 3-2-1 backup rule, for home and small office</h3><p>Three copies, two kinds of storage, one off-site: the backup plan that survives ransomware, theft and fire, with ready-to-use scripts for Windows, Mac and Linux.</p><span class="aud">For everyone</span><span class="more">Read</span></a><a class="card article-card" data-topics="networking windows linux macos security" href="guide-listening-ports.html"><span class="art-meta">Networking · Beginner · 6 min</span><h3>What is listening on your ports?</h3><p>Find every open port and the program behind it on Windows, Linux and macOS, then close or lock down what should not be there.</p><span class="more">Read</span></a></div></section>
+  <div style="height:40px"></div>
+</div>
+</div>
+</main>
+<section class="night" id="newsletter" aria-labelledby="nl-title">
+  <div class="wrap grid">
+    <div>
+      <h2 id="nl-title" style="font-size:clamp(28px,4.2vw,38px)">Field notes, every other week.</h2>
+      <p style="margin-top:12px;font-size:17px">New tool releases plus field notes: PowerShell recipes and hardening checklists. No spam. Unsubscribe in one click.</p>
+    </div>
+    <div>
+      <form class="sub-form" id="subForm" novalidate>
+        <label for="subEmail" style="font-weight:500">Email address</label>
+        <div class="sub-row">
+          <input id="subEmail" type="email" autocomplete="email" placeholder="you@company.com" required>
+          <button type="submit" class="btn btn-bronze">Subscribe</button>
+        </div>
+        <span class="night-error" id="subError" role="alert"></span>
+        <span class="fine">By subscribing you agree to the <a href="privacy.html">privacy policy</a>.</span>
+      </form>
+      <div class="done-box" id="subDone" role="status" hidden>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7CC4EE" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0"><path d="M5 12l5 5 9-10"/></svg>
+        <div><strong>Check your inbox</strong><span>We sent a confirmation link to <b id="subEmailOut"></b>. Click it to finish subscribing.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="share" aria-label="Share Castron">
+      <strong>Know someone who would find this useful? Share Castron.</strong>
+      <div class="row">
+        <button type="button" class="btn btn-ghost" id="copyBtn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><span id="copyLabel">Copy link</span></button>
+        <button type="button" class="btn btn-ghost" id="nativeShare" hidden>Share</button>
+        <a class="btn btn-ghost" id="shareX" target="_blank" rel="noopener">X</a>
+        <a class="btn btn-ghost" id="shareLinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" id="shareReddit" target="_blank" rel="noopener">Reddit</a>
+        <a class="btn btn-ghost" id="shareEmail">Email</a>
+      </div>
+    </div>
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="CastronTech home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 359 110" aria-hidden="true" focusable="false"><use href="#castron-shield" x="0" y="0" width="98" height="110"/><path d="M134.96665649414064 75.69166564941406Q130.9166748046875 75.69166564941406 127.9708480834961 74.37083587646484Q125.02502136230468 73.05000610351563 123.1250213623047 70.68334350585937Q121.22502136230469 68.31668090820312 120.32918548583984 65.22917938232422Q119.433349609375 62.14167785644531 119.433349609375 58.616668701171875Q119.433349609375 54.97499084472656 120.36251983642578 51.816656494140624Q121.29169006347657 48.658322143554685 123.17085723876954 46.30415802001953Q125.0500244140625 43.94999389648437 127.9458511352539 42.629164123535155Q130.8416778564453 41.30833435058594 134.80832214355468 41.30833435058594Q138.23330078125 41.30833435058594 140.7499572753906 42.29166259765625Q143.26661376953126 43.27499084472656 144.8374465942383 44.99581756591797Q146.4082794189453 46.716644287109375 147.0624526977539 48.974972534179685Q147.7166259765625 51.233300781249994 147.49163513183595 53.749969482421875L140.84173278808595 54.59162902832031Q140.88339233398438 52.324948120117185 140.16671447753907 50.699938964843746Q139.45003662109374 49.07492980957031 138.0583557128906 48.19159240722656Q136.6666748046875 47.30825500488281 134.59999389648436 47.30825500488281Q132.84164733886718 47.30825500488281 131.43746490478514 47.995759582519526Q130.0332824707031 48.68326416015625 129.04160156249998 50.06244049072265Q128.04992065429687 51.44161682128906 127.52491149902343 53.49996643066406Q126.99990234375 55.55831604003906 126.99990234375 58.30000610351563Q126.99990234375 61.825033569335936 127.90824890136719 64.37921600341797Q128.81659545898438 66.9333984375 130.62911529541014 68.31673889160157Q132.44163513183594 69.70007934570313 135.1166564941406 69.70007934570313Q137.5500061035156 69.70007934570313 139.0250244140625 68.6000732421875Q140.5000427246094 67.50006713867188 141.15838928222655 65.52505187988282Q141.81673583984374 63.55003662109375 141.64173889160156 61.000006103515624L148.46663818359374 61.64167175292969Q148.68330078125 64.44167785644531 148.02496337890625 66.9666778564453Q147.3666259765625 69.4916778564453 145.73745880126953 71.4666748046875Q144.10829162597656 73.4416717529297 141.44163208007814 74.56666870117188Q138.77497253417968 75.69166564941406 134.96665649414064 75.69166564941406Z M152.2166748046875 75.0 163.4250274658203 42.0H172.83322753906248L183.99991455078123 75.0H176.2000305175781L168.22496032714844 47.89992065429688H167.93329467773435L159.94156188964843 75.0ZM158.2499816894531 68.79162292480468V63.60835266113281H178.84159240722656V68.79162292480468Z M201.5916534423828 75.69166564941406Q198.20833435058594 75.69166564941406 195.62500610351563 74.91250152587891Q193.04167785644532 74.13333740234376 191.30001220703127 72.65834045410156Q189.5583465576172 71.18334350585937 188.72917938232422 69.06667785644531Q187.90001220703124 66.95001220703125 188.0166809082031 64.30834045410157L194.74158630371093 62.86669921875Q194.7665771484375 65.35005493164063 195.71658630371093 66.85423126220704Q196.66659545898438 68.35840759277343 198.30411224365236 69.05007629394531Q199.9416290283203 69.74174499511719 201.91664428710936 69.74174499511719Q203.65834045410156 69.74174499511719 204.96669311523436 69.3000701904297Q206.2750457763672 68.85839538574218 207.02505493164062 68.05421295166016Q207.77506408691406 67.25003051757812 207.77506408691406 66.15834045410156Q207.77506408691406 64.766650390625 206.7875534057617 63.9124740600586Q205.80004272460937 63.05829772949219 204.12086334228513 62.48746185302734Q202.44168395996093 61.9166259765625 200.3833435058594 61.383294677734376Q198.23334350585938 60.80829772949219 196.11251068115234 60.10413360595703Q193.9916778564453 59.399969482421874 192.24584503173827 58.320805358886716Q190.50001220703126 57.241641235351565 189.4333465576172 55.51664428710937Q188.36668090820314 53.791647338867186 188.36668090820314 51.22498474121093Q188.36668090820314 48.116662597656244 189.94584197998046 45.89583282470703Q191.5250030517578 43.67500305175781 194.34999694824216 42.491668701171875Q197.17499084472655 41.30833435058594 200.8666564941406 41.30833435058594Q204.6916473388672 41.30833435058594 207.66247100830077 42.595829772949216Q210.63329467773437 43.883325195312494 212.24579010009765 46.3791519165039Q213.85828552246093 48.87497863769531 213.5416229248047 52.52497253417968L206.90838317871095 53.6166259765625Q206.9917205810547 52.04161682128906 206.600048828125 50.83744354248047Q206.2083770751953 49.633270263671875 205.40003356933593 48.799932861328124Q204.59169006347656 47.96659545898437 203.3916778564453 47.529093933105464Q202.19166564941406 47.09159240722656 200.6166564941406 47.09159240722656Q198.9083038330078 47.09159240722656 197.7416198730469 47.55826721191406Q196.57493591308594 48.02494201660156 195.9624252319336 48.84579010009765Q195.34991455078125 49.66663818359375 195.34991455078125 50.741659545898436Q195.34991455078125 52.00835266113281 196.25409393310548 52.80419769287109Q197.15827331542968 53.600042724609374 198.77912139892578 54.14171142578125Q200.39996948242188 54.683380126953125 202.4999755859375 55.22504577636718Q204.65830993652344 55.80004272460937 206.81664123535157 56.50420684814453Q208.9749725341797 57.208370971679685 210.80413665771485 58.350033569335935Q212.63330078125 59.491696166992185 213.73746490478516 61.3000244140625Q214.8416290283203 63.10835266113281 214.8416290283203 65.88334350585937Q214.8416290283203 69.11666870117188 213.15830078125 71.3Q211.4749725341797 73.48333129882812 208.49581146240234 74.58749847412109Q205.516650390625 75.69166564941406 201.5916534423828 75.69166564941406Z M227.4833740234375 75.0V42.0H234.70826721191406V75.0ZM219.0 48.19158020019531V42.0H243.19164123535157V48.19158020019531Z M248.55001831054688 75.0V42.0H261.72495422363284Q263.9416229248047 42.0 265.9124557495117 42.37916717529296Q267.88328857421874 42.75833435058593 269.49161987304683 43.520835876464844Q271.099951171875 44.28333740234375 272.2749481201172 45.441671752929686Q273.4499450683594 46.600006103515625 274.0832763671875 48.17500610351563Q274.71660766601565 49.750006103515624 274.71660766601565 51.74167175292969Q274.71660766601565 53.266668701171874 274.2124435424805 54.65833740234375Q273.7082794189453 56.05000610351563 272.60411529541017 57.170841979980466Q271.499951171875 58.29167785644531 269.7124496459961 59.029179382324216Q267.92494812011716 59.76668090820313 265.4082733154297 60.03334350585938V60.433343505859376Q268.5082611083984 60.591677856445315 270.23742523193357 61.66250762939453Q271.9665893554687 62.73333740234375 272.86659240722656 64.42500610351563Q273.7665954589844 66.1166748046875 274.2666015625 68.20835876464844L275.99159851074216 75.0H268.03338623046875L266.78338623046875 68.70003051757813Q266.450048828125 66.94169006347656 265.7792098999023 65.7666748046875Q265.1083709716797 64.59165954589844 263.8541915893554 63.98748016357422Q262.6000122070312 63.38330078125 260.4916534423828 63.38330078125H255.77491149902343V75.0ZM255.77491149902343 57.74170837402343H260.8832946777344Q263.9916717529297 57.74170837402343 265.62502746582027 56.57502746582031Q267.2583831787109 55.408346557617186 267.2583831787109 52.98331298828125Q267.2583831787109 50.399951171875 265.7291946411133 49.129103088378905Q264.20000610351565 47.85825500488281 261.0916290283203 47.85825500488281H255.77491149902343Z" style="fill:var(--ink)"/><g transform="translate(295.8 57.0)" fill="none" stroke-linecap="round"><circle r="15.5" style="stroke:var(--ink)" stroke-width="6.5"/><circle r="5.5" style="fill:var(--lock)" stroke="none"/><path d="M0-23v-7M0 23v7" style="stroke:var(--lock)" stroke-width="4"/></g><path d="M316.9000183105469 75.0V42.0H326.65821838378906L339.5500244140625 65.65849304199219H339.6500244140625V42.0H346.7999206542969V75.0H337.56670532226565L324.14158020019534 50.724856567382815H324.0415802001953V75.0Z" style="fill:var(--ink)"/></svg><span class="sub-brand">Tech</span></a>
+        <p class="small muted" style="margin-top:10px">Careful admin, security and compliance tools for Windows, Linux and macOS.</p>
+        <div class="socials">
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Castron on YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></svg></a>
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="Castron on GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5"/><path d="M16 7l5 5-5 5"/></svg></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Castron on LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+          <a href="https://x.com/" target="_blank" rel="noopener" aria-label="Castron on X"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+        </div>
+      </div>
+      <nav aria-label="Tools"><strong>Tools</strong><a href="tools.html">All tools</a><a href="adhygiene.html">ADHygiene</a><a href="tools.html#hardening">CastronSTIG</a><a href="tools.html#patching">CastronPatch</a><a href="index.html#videos">Videos</a></nav>
+      <nav aria-label="Learn"><strong>Learn</strong><a href="index.html#videos">Videos</a><a href="#newsletter">Field notes</a><a href="docs.html">Documentation</a><a href="changelog.html">Changelog</a></nav>
+      <nav aria-label="Company"><strong>Company</strong><a href="about.html">About</a><a href="contact.html">Contact</a><a href="terms.html">Terms and EULA</a><a href="privacy.html">Privacy policy</a><a href="refunds.html">Refund policy</a></nav>
+    </div>
+    <div class="foot-bottom">
+      <span class="powered">Powered by <svg viewBox="0 0 915 1024" aria-hidden="true" focusable="false"><use href="#castron-shield" width="915" height="1024"/></svg> <strong>Castron Holdings LLC</strong></span>
+      <span>&copy; <span class="year">2026</span> Castron Holdings LLC. All rights reserved.</span>
+      <span>Castron is not affiliated with or endorsed by Microsoft, Apple, DISA or the U.S. Department of Defense. STIG refers to the Security Technical Implementation Guides published by DISA. Windows, Active Directory and PowerShell are trademarks of Microsoft Corporation; macOS is a trademark of Apple Inc.; Linux is a trademark of Linus Torvalds.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay" hidden>
+  <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle">
+    <div class="dialog-head">
+      <h2 id="dialogTitle">Welcome back</h2>
+      <button type="button" class="icon-btn" id="closeBtn" aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <form id="loginForm" novalidate>
+      <div class="field"><label for="loginEmail">Email</label><input id="loginEmail" type="email" autocomplete="email" required></div>
+      <div class="field"><div class="label-row"><label for="loginPassword">Password</label><a href="contact.html">Forgot password?</a></div><input id="loginPassword" type="password" autocomplete="current-password" required></div>
+      <span class="form-error" role="alert"></span>
+      <button type="submit" class="btn btn-primary btn-lg">Log in</button>
+      <p class="switch">New here? <button type="button" class="link-btn" data-open="signup">Create an account</button></p>
+    </form>
+    <form id="signupForm" novalidate hidden>
+      <div class="field"><label for="suName">Full name</label><input id="suName" type="text" autocomplete="name" required></div>
+      <div class="field"><label for="suEmail">Work email</label><input id="suEmail" type="email" autocomplete="email" required></div>
+      <div class="field"><label for="suPassword">Password</label><input id="suPassword" type="password" autocomplete="new-password" minlength="12" aria-describedby="pwHint" required><span class="hint" id="pwHint">At least 12 characters.</span></div>
+      <label class="check"><input type="checkbox" id="suAgree"><span>I agree to the <a href="terms.html">Terms and EULA</a> and <a href="privacy.html">Privacy policy</a>.</span></label>
+      <label class="check"><input type="checkbox" id="suOptIn" checked><span>Send me the field notes newsletter (optional).</span></label>
+      <span class="form-error" role="alert"></span>
+      <button type="submit" class="btn btn-primary btn-lg">Create account</button>
+      <p class="switch">Already have an account? <button type="button" class="link-btn" data-open="login">Log in</button></p>
+    </form>
+    <div class="panel" id="authDone" role="status" hidden>
+      <p id="authDoneText" style="color:var(--text)"></p>
+      <button type="button" class="btn btn-primary btn-lg" id="doneBtn">Continue</button>
+    </div>
+    <p class="demo-note">Preview only: accounts are not saved yet.</p>
+  </div>
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>
